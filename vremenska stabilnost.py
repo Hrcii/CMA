@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import opt
 
 path = "C:\\Users\\hrvoj\\OneDrive\\Radna površina\\LAFRA\\" \
-       "futures-active_adjusted_1min_qucz81\\BTC_continuous_adjusted_1min.txt"
+       "futures-active_adjusted_1min_qucz81\\BTC_continuous_adjusted_1min.txt" #ZADATI NOVU!
 n = 50
 p = 7200
 w = opt.opt(path,n,p)
@@ -29,7 +29,7 @@ for i in range(len(prices)//(n+p-1)):
 plt.plot(np.linspace(0,len(prices)//(n+p-1)-1,len(prices)//(n+p-1)),error,label="CMA(50)")
 plt.plot(np.linspace(0,len(prices)//(n+p-1)-1,len(prices)//(n+p-1)),error1,label="SMA(50)")
 plt.legend()
-plt.title("BTC, 2049 uzoraka po otvoru")
+plt.title("BTC, 7249 uzoraka po otvoru")
 plt.xlabel("vremenski otvor")
 plt.ylabel("acc")
 plt.show()
